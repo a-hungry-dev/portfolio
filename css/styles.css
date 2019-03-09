@@ -10,7 +10,7 @@ body, html {
   left: 0px;
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   transition: all 600ms;
   transition-timing-function: cubic-bezier(0.04, 0.62, 0.2, 0.94);
 }
@@ -52,9 +52,9 @@ body, html {
 .splash-reveal>span {
   position: absolute;
   bottom: 20px;
-  border-left: 30px solid transparent;
+  border-left: 20px solid transparent;
   border-bottom: 30px solid black;
-  border-right: 30px solid transparent;
+  border-right: 20px solid transparent;
   transition: all 600ms;
   animation-name: bounce;
   animation-duration: 2s;
@@ -63,6 +63,24 @@ body, html {
 
 .splash-reveal:hover span {
   animation: none;
+}
+
+.splash-social {
+  height: 50px;
+}
+
+.splash-social a {
+  color: black;
+  text-decoration: none;
+  font-size: 27px;
+  transform: scale(1);
+  transition: all 300ms;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.splash-social a:hover {
+  transform: scale(1.2);
 }
 
 @keyframes bounce {
